@@ -1,18 +1,12 @@
-package com.bbm.foodservice.dishes.MainDish;
+package com.bbm.foodservice.dishes.Desserts;
 
 import com.bbm.foodservice.dishes.Desserts.Serbetli.Serbetli;
 import com.bbm.foodservice.dishes.Desserts.Sutlu.Sutlu;
-import com.bbm.foodservice.dishes.MainDish.Izgara.Izgara;
-import com.bbm.foodservice.dishes.MainDish.Kebab.Kebab;
-import com.bbm.foodservice.dishes.MainDish.Pide.Pide;
-import com.bbm.foodservice.dishes.MainDish.Sisler.Sis;
 import com.bbm.foodservice.dishes.Order;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
-abstract public class MainDish extends Order {
+abstract public class Desserts extends Order {
 
     private String name;
     private int time;
@@ -20,17 +14,12 @@ abstract public class MainDish extends Order {
     private boolean preparing;
     private ArrayList<String> ingredients = new ArrayList<>();
 
-    public static MainDish chooseDish(String mainDishType, String type){
-        if(mainDishType.equalsIgnoreCase("izgara")){
-            return Izgara.returnDish(type);
-        }else if(mainDishType.equalsIgnoreCase("kebab")){
-            return Kebab.returnDish(type);
-        }else if(mainDishType.equalsIgnoreCase("pide")){
-            return Pide.returnDish(type);
-        }else if(mainDishType.equalsIgnoreCase("sis")){
-            return Sis.returnDish(type);
+    public static Desserts chooseDish(String dessertType, String dessert){
+        if(dessertType.equalsIgnoreCase("sutlu")){
+            return Sutlu.returnDish(dessert);
+        }else if(dessertType.equalsIgnoreCase("serbetli")){
+            return Serbetli.returnDish(dessert);
         }
-
         return null;
     }
 

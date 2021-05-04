@@ -1,25 +1,23 @@
 package com.bbm.foodservice.dishes.Warmups;
 
-public class Tarhana extends Warmups{
-    public Tarhana(){
-        super.setName("Tarhana Corbasi");
+public class KellePaca extends Warmups{
+    public KellePaca(){
+        super.setName("KellePaca Corbasi");
     }
 
     @Override
     public void addIngredients() {
-        super.setIngredients("Tarhana");
-        super.setIngredients("Soğan");
-        super.setIngredients("Patates");
+        super.setIngredients("Kelle paca");
     }
 
     @Override
     public void cookTime() {
-        super.setTime(15);
+        super.setTime(20);
     }
 
     @Override
     public void calculateCost() {
-        super.setCost(11);
+        super.setCost(16);
     }
 
     @Override

@@ -1,19 +1,15 @@
 package com.bbm.foodservice.dishes.Salads;
 
-public class Saezar extends Salads{
-    public Saezar(){
-        super.setName("Saezar Salad");
+public class Sogan extends Salads{
+    public Sogan(){
+        super.setName("Sogan Salad");
     }
 
     @Override
     public void addIngredients() {
-        super.setIngredients("Domates");
-        super.setIngredients("Marul");
-        super.setIngredients("Ekmek");
         super.setIngredients("Limon");
-        super.setIngredients("Parmesan");
-        super.setIngredients("Hardal");
-        super.setIngredients("Mayonez");
+        super.setIngredients("Sogan");
+        super.setIngredients("Sumak");
     }
 
     @Override
@@ -23,12 +19,11 @@ public class Saezar extends Salads{
 
     @Override
     public void calculateCost() {
-        super.setCost(16);
+        super.setCost(13);
     }
 
     @Override
     public void prepareToServe() {
         super.setPreparing(true);
     }
-
 }

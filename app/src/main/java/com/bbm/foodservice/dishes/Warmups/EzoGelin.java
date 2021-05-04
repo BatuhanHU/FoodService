@@ -1,15 +1,15 @@
 package com.bbm.foodservice.dishes.Warmups;
 
-public class Tarhana extends Warmups{
-    public Tarhana(){
-        super.setName("Tarhana Corbasi");
+public class EzoGelin extends Warmups{
+    public EzoGelin(){
+        super.setName("EzoGelin Corbasi");
     }
 
     @Override
     public void addIngredients() {
-        super.setIngredients("Tarhana");
-        super.setIngredients("Soğan");
-        super.setIngredients("Patates");
+        super.setIngredients("Kırmızı mercimek");
+        super.setIngredients("Pirinc");
+        super.setIngredients("Bulgur");
     }
 
     @Override
