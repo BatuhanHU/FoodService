@@ -22,19 +22,25 @@ abstract public class Desserts extends Order {
         }
         return null;
     }
-
+ /*
     //steps
     public abstract void addIngredients();
     public abstract void cookTime();
     public abstract void calculateCost();
     public abstract void prepareToServe();
+*/
+    public abstract void prepareDessert();
 
     //template method
     public void prepareFood(){
+        /*
         addIngredients();
         cookTime();
         calculateCost();
         prepareToServe();
+
+         */
+        prepareDessert();
     }
 
     public double getCost() {
