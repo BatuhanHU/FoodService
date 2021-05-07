@@ -25,17 +25,23 @@ abstract public class Beverages extends Order{
     }
 
     //steps
+    /*
     public abstract void addIngredients();
     public abstract void cookTime();
     public abstract void calculateCost();
     public abstract void prepareToServe();
-
+*/
+    public abstract void prepareBeverages();
     //template method
     public void prepareFood(){
+
+        /*
         addIngredients();
         cookTime();
         calculateCost();
         prepareToServe();
+         */
+        prepareBeverages();
     }
 
     public double getCost() {

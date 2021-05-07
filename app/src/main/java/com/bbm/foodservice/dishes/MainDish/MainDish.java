@@ -33,19 +33,26 @@ abstract public class MainDish extends Order {
 
         return null;
     }
-
+/*
     //steps
     public abstract void addIngredients();
     public abstract void cookTime();
     public abstract void calculateCost();
     public abstract void prepareToServe();
+*/
+
+    public abstract void prepareMainDish();
 
     //template method
     public void prepareFood(){
+        /*
         addIngredients();
         cookTime();
         calculateCost();
         prepareToServe();
+
+         */
+        prepareMainDish();
     }
 
     public double getCost() {
