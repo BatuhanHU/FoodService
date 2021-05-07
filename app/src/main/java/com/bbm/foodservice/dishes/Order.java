@@ -8,23 +8,33 @@ import com.bbm.foodservice.dishes.Warmups.Warmups;
 
 public class Order {
 
-    MainDish maindish;
-    Warmups warmup;
-    Salads salad;
-    Desserts dessert;
-    Beverages beverage;
+    public MainDish maindish;
+    public Warmups warmup;
+    public Salads salad;
+    public Desserts dessert;
+    public Beverages beverage;
 
     public void prepareOrder(String mainDishType, String type, String warmups,String saladType,String dessertType, String desserts,String beverageType,String drink){
         maindish = MainDish.chooseDish(mainDishType, type);
-        maindish.prepareFood();
+        if (maindish != null) {
+            maindish.prepareFood();
+        }
         warmup = Warmups.chooseDish(warmups);
-        warmup.prepareFood();
+        if (warmup != null) {
+            warmup.prepareFood();
+        }
         salad = Salads.chooseDish(saladType);
-        salad.prepareFood();
+        if (salad != null) {
+            salad.prepareFood();
+        }
         dessert = Desserts.chooseDish(dessertType,desserts);
-        dessert.prepareFood();
+        if (dessert != null) {
+            dessert.prepareFood();
+        }
         beverage = Beverages.chooseDish(beverageType,drink);
-        beverage.prepareFood();
+        if (beverage != null) {
+            beverage.prepareFood();
+        }
     }
 
     public static void main(String[] args){
@@ -34,4 +44,14 @@ public class Order {
         System.out.println(order.maindish.getIngredients());
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "maindish=" + maindish +
+                ", warmup=" + warmup +
+                ", salad=" + salad +
+                ", dessert=" + dessert +
+                ", beverage=" + beverage +
+                '}';
+    }
 }

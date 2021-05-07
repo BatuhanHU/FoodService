@@ -1,3 +1,85 @@
 <resources>
     <string name="app_name">Food Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="maindish_array">
+        <item>No selection</item>
+        <item>Izgara</item>
+        <item>Kebab</item>
+        <item>Pide</item>
+        <item>Sisler</item>
+    </string-array>
+    <string-array name="maindish_izgara_array">
+        <item>Kofte</item>
+        <item>Tavuk Kanat</item>
+    </string-array>
+    <string-array name="maindish_kebab_array">
+        <item>Adana Kebab</item>
+        <item>Ali Nazik Kebab</item>
+        <item>Karisik Kebab</item>
+        <item>Patlican Kebab</item>
+        <item>Urfa Kebab</item>
+        <item>Yogurtlu Kebab</item>
+    </string-array>
+    <string-array name="maindish_pide_array">
+        <item>Kasarli</item>
+        <item>Kiymali</item>
+        <item>Kusbasili</item>
+    </string-array>
+    <string-array name="maindish_sisler_array">
+        <item>Cop</item>
+        <item>Kuzu</item>
+        <item>Tavuk</item>
+    </string-array>
+    <string-array name="warmup_array">
+        <item>No selection</item>
+        <item>Ezogelin</item>
+        <item>Kellepaca</item>
+        <item>Mercimek</item>
+        <item>Tarhana</item>
+        <item>Yayla</item>
+    </string-array>
+    <string-array name="salad_array">
+        <item>No Salad</item>
+        <item>Coban</item>
+        <item>Seazar</item>
+        <item>Sogan</item>
+    </string-array>
+    <string-array name="dessert_array">
+        <item>No Dessert</item>
+        <item>Sutlu</item>
+        <item>Serbetli</item>
+    </string-array>
+    <string-array name="dessert_serbetli_array">
+        <item>Baklava</item>
+        <item>Halka</item>
+        <item>Kunefe</item>
+        <item>Revani</item>
+    </string-array>
+    <string-array name="dessert_sutlu_array">
+        <item>Gullac</item>
+        <item>Muhallebi</item>
+        <item>Sutlac</item>
+        <item>Tiramisu</item>
+    </string-array>
+    <string-array name="beverages_array">
+        <item>No Beverages</item>
+        <item>Hot</item>
+        <item>Normal</item>
+        <item>Sparkling</item>
+    </string-array>
+    <string-array name="beverages_hot_array">
+        <item>Coffee</item>
+        <item>Tea</item>
+    </string-array>
+    <string-array name="beverages_sparkling_array">
+        <item>Coke</item>
+        <item>Sparkling Water</item>
+        <item>Sprite</item>
+    </string-array>
+    <string-array name="beverages_normal_array">
+        <item>Ayran</item>
+        <item>Water</item>
+    </string-array>
 </resources>

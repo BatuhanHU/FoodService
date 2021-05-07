@@ -12,9 +12,9 @@ abstract public class Warmups extends Order{
     private ArrayList<String> ingredients = new ArrayList<>();
 
     public static Warmups chooseDish(String dish){
-        if(dish.equalsIgnoreCase("ezo gelin")){
+        if(dish.equalsIgnoreCase("ezogelin")){
             return new EzoGelin();
-        }else if(dish.equalsIgnoreCase("kelle paca")){
+        }else if(dish.equalsIgnoreCase("kellepaca")){
             return new KellePaca();
         } else if(dish.equalsIgnoreCase("mercimek")){
             return new Mercimek();
