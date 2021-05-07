@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bbm.foodservice.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_orderMainFragment"
+            app:destination="@id/orderMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderMainFragment"
+        android:name="com.bbm.foodservice.OrderMainFragment"
+        android:label="fragment_order_main"
+        tools:layout="@layout/fragment_order_main" >
+        <action
+            android:id="@+id/action_orderMainFragment_to_secondLevelFoodFragment"
+            app:destination="@id/secondLevelFoodFragment" />
+        <argument
+            android:name="selectedFood"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_orderMainFragment_to_finishOrderFragment"
+            app:destination="@id/finishOrderFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/secondLevelFoodFragment"
+        android:name="com.bbm.foodservice.SecondLevelFoodFragment"
+        android:label="fragment_second_level_food"
+        tools:layout="@layout/fragment_second_level_food" >
+        <action
+            android:id="@+id/action_secondLevelFoodFragment_to_orderMainFragment"
+            app:destination="@id/orderMainFragment" />
+        <argument
+            android:name="foodName"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/finishOrderFragment"
+        android:name="com.bbm.foodservice.FinishOrderFragment"
+        android:label="fragment_finish_order"
+        tools:layout="@layout/fragment_finish_order" >
+        <argument
+            android:name="warmup"
+            app:argType="string" />
+        <argument
+            android:name="mainDish"
+            app:argType="string" />
+        <argument
+            android:name="salad"
+            app:argType="string" />
+        <argument
+            android:name="dessert"
+            app:argType="string" />
+        <argument
+            android:name="beverage"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_finishOrderFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
